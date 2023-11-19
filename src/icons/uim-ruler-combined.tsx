@@ -1,0 +1,15 @@
+import {component$, createElement} from "@builder.io/qwik";
+import { Props } from '../index';
+
+export default component$<Props>(({ color = 'currentColor', size = 24, ...props }) => {
+  return createElement('svg', {
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: size,
+    height: size,
+    viewBox: '0 0 24 24',
+    fill: color,
+    ...props
+  }, createElement('path', {
+    d: 'M14 10h-2V7a1 1 0 0 1 1-1 1 1 0 0 1 1 1zM9 6a1 1 0 0 0-1 1v1H7a1 1 0 0 0 0 2h3V7a1 1 0 0 0-1-1zm1 6v2H7a1 1 0 0 1-1-1 1 1 0 0 1 1-1z'
+  }));
+});
