@@ -1,6 +1,6 @@
 {
   "name": "qwik-unicons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "4,500+ vector icons as easy to use Qwik Components",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",

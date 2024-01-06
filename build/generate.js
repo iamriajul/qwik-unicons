@@ -67,7 +67,7 @@ generate(solidPaths, 'uis', 'solid');
 generate(monochromePaths, 'uim', 'monochrome');
 generate(thinlinePaths, 'uit', 'thinline');
 
-fs.writeFileSync(iconsIndexPath, `import {SVGAttributes} from "@builder.io/qwik";
+fs.writeFileSync(iconsIndexPath, `import {PropsOf} from "@builder.io/qwik";
 export type Props = {
     /**
      * The color of the icon
@@ -79,7 +79,7 @@ export type Props = {
      * @default 24
      */
     size?: string | number;
-} & SVGAttributes<SVGElement>
+} & PropsOf<'svg'>;
 
 ${indexTs.join('\n')}
 `, 'utf-8')

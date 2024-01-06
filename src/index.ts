@@ -1,4 +1,4 @@
-import {SVGAttributes} from "@builder.io/qwik";
+import {PropsOf} from "@builder.io/qwik";
 export type Props = {
     /**
      * The color of the icon
@@ -10,7 +10,7 @@ export type Props = {
      * @default 24
      */
     size?: string | number;
-} & SVGAttributes<SVGElement>
+} & PropsOf<'svg'>;
 
 export { default as Uil0Plus } from './icons/uil-0-plus'
 export { default as Uil10Plus } from './icons/uil-10-plus'
