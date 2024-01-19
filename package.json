@@ -2,6 +2,23 @@
   "name": "qwik-unicons",
   "version": "0.0.4",
   "description": "4,500+ vector icons as easy to use Qwik Components",
+  "sideEffects": false,
+  "license": "IconScout Simple License",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamriajul/qwik-unicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamriajul/qwik-unicons/issues"
+  },
+  "keywords": [
+    "unicons",
+    "qwik-unicons",
+    "icons",
+    "iconscout",
+    "vector",
+    "icons"
+  ],
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
